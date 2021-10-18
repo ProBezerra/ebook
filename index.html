@@ -42,6 +42,39 @@
     </header>
 
     <main class="content">
+      <div class="introducao">
+        <h2>Sobre o ebook</h2>
+        <p>
+          Esse é um pequeno guia de passos para iniciante começar no
+          desenvolvimento front-end. Espero que você possa aprender
+          muitas coisas ao ler cada página deste ebook.
+        </p>
+
+        <p>
+          Faça todos os testes você mesmo, faça exercícios, busque
+          informações e se aprofunde.
+        </p>
+
+        <p>
+          Observação importante:
+          O desenvolvimento do ebook não foi concluído ainda, falta o
+          fundamentos de CSS e JavaScript.
+        </p>
+
+        <p>
+          Sinta-se à vontade em ajudar a comprar meu café, assim
+          continuo criando conteúdos de forma gratuita :)
+        </p>
+
+        <h6>Chave do pix: iuricold99@gmail.com</h6>
+
+        <p>
+          Grande abraço!<br>
+          by <a href="https://www.instagram.com/iuricode/" target="_blank">iuricode</a>
+        </p>
+      </div>
+
+
       <div>
         <h2>Fundamentos HTML</h2>
         <h3>O que é HTML</h3>
@@ -134,16 +167,14 @@
         </p>
 
         <pre>
-          <code>&lt;p&gt;Programador sem café é um poeta sem poesia.&lt;/p&gt;</code>
+          <code>&lt;p&gt;<span>Programador sem café é um poeta sem poesia</span>&lt;/p&gt;</code>
         </pre>
 
         <p>Os elementos podem entrar dentro de outros elementos:</p>
 
         <pre>
           <code>&lt;pai&gt;</code>
-            <code>&lt;filho&gt;</code>
-              <code><span>Esta tag está dentro de outra tag</span></code>
-            <code>&lt;/filho&gt;</code>
+            <code>&lt;filho&gt;<span>Esta tag está dentro de outra tag</span>&lt;/filho&gt;</code>
           <code>&lt;/pai&gt;</code>
         </pre>
       </div>
@@ -175,16 +206,521 @@
       </div>
 
       <div>
-        <h3>Tags</h3>
-        <p>
-          Agora vamos apresentar as principais tags do HTML.
-        </p>
 
-        <h4>Título</h4>
+        <h3>Título</h3>
         <p>As tags de títulos são representadas em até seis níveis. &lt;h1&gt; é o
           nível mais alto e &lt;h6&gt; é o mais baixo. Quanto maior for o nível
           da tag, maior vai ser o tamanho da fonte e a importância.
         </p>
+
+        <pre>
+          <code>&lt;h1&gt;<span>Título do h1</span>&lt;/h1&gt;</code>
+          <code>&lt;h2&gt;<span>Título do h2</span>&lt;/h2&gt;</code>
+          <code>&lt;h3&gt;<span>Título do h3</span>&lt;/h3&gt;</code>
+          <code>&lt;h4&gt;<span>Título do h4</span>&lt;/h4&gt;</code>
+          <code>&lt;h5&gt;<span>Título do h5</span>&lt;/h5&gt;</code>
+          <code>&lt;h6&gt;<span>Título do h6</span>&lt;/h6&gt;</code>
+        </pre>
+
+        <h3>Texto</h3>
+        <p>As tags de texto, definem diferentes formatações para diversos
+          tipos de texto. Desde estilos de fonte, parágrafos, quebra de
+          linha ou até mesmo spans. Enfim iremos conhecê-las:
+        </p>
+
+        <ul>
+          <li>
+            <h4>&lt;p&gt;</h4>
+            <p>
+              - Sendo a principal tag de texto, é usada para
+              constituir um parágrafo.            
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;span&gt;</h4>
+            <p>
+              - Mesmo tendo a sua funcionalidade parecida
+              com o uso dos parágrafos. Spans geralmente são utilizados para
+              guardar uma pequena informação.           
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;b&gt;</h4>
+            <p>
+              - Deixa o seu texto em negrito.           
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;i&gt;</h4>
+            <p>
+              - Deixa o seu texto em itálico.      
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;hr&gt;</h4>
+            <p>
+              - Cria uma linha horizontal   
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Image</h3>
+        <p>
+          Para colocar uma imagem na página é bem simples, vejamos:
+        </p>
+
+        <pre>
+          <code>&lt;img src="nomeDoArquivo.formato"&gt;</code>
+        </pre>
+
+        <p>
+          Você talvez deve ter se perguntado "o que é esse src?". O src vem de source, ele é atributo da tag &lt;img&gt;, nele vai conter o caminho da imagem que será inserida por você. Alguns pontos importantes:
+        </p>
+
+        <ul>
+          <li>
+            <p>A tag img não tem a chave de fechamento</p>
+          </li>
+          <li>
+            <p>Se você tiver com a imagem de uma pasta, deve colocar o
+              caminho dela dentro do src.</p>
+          </li>
+          <li>
+            <p>Recomendamos que você coloque o atributo alt para que
+              pessoas com deficiência (através de um leitor) saibam do que
+              se trata a imagem na página.</p>
+          </li>
+        </ul>
+
+        <pre>
+          <code>&lt;img src="nomeDaPasta/nomeDoArquivo.formato" alt="descrição sobre a imagem"&gt;</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>Link</h3>
+        <p>
+          A tag &lt;a&gt; define um hiperlink, que é usado para linkar de uma
+            página a outra.            
+        </p>
+
+        <p>
+          O atributo mais importante do elemento é o atributo href, que indica o destino do link.            
+        </p>
+
+        <pre>
+          <code>&lt;a&gt; href="link-do-site"><span>Sou um link</span>&lt;/a&gt;</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>Div</h3>
+        <p>
+          A tag &lt;div&gt; define uma divisão ou seção em um documento
+            HTML. A tag &lt;div&gt; é facilmente estilizada usando o atributo
+            class ou id. Qualquer tipo de conteúdo pode ser colocado
+            dentro da tag &lt;div&gt;.          
+        </p>
+
+        <p>
+          Mesmo tendo a sua funcionalidade parecida com o &lt;span&gt; que
+            são geralmente utilizados para guardar uma pequena
+            informação. O &lt;div&gt; é usados para uma divisão de um conteúdo
+            pois, como o uso dela ajuda a quebrar os elementos em linhas,
+            deixando melhor a visualização.        
+        </p>
+
+        <pre>
+          <code>&lt;div&gt;</code>
+            <code>&lt;p&gt;<span>Sou uma div</span>&lt;/p&gt;</code>
+          <code>&lt;/div&gt;</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>Listas</h3>
+        <p>
+          Vamos agora falar um pouco sobre as listas (ordenadas e
+          desordenadas) e como elas funcionam no HTML. As listas são
+          muito importantes quando queremos listar itens na página.
+                   
+        </p>
+
+        <h4>Listas ordenadas</h4>
+
+        <p>
+          As listas ordenadas (ou numeradas) são usadas para indicar alguma sequência ou numeração.      
+        </p>
+
+        <pre>
+          <code>&lt;ol&gt;</code>
+            <code>&lt;li&gt;<span>html</span>&lt;/li&gt;</code>
+            <code>&lt;li&gt;<span>css</span>&lt;/li&gt;</code>
+            <code>&lt;li&gt;<span>javascript</span>&lt;/li&gt;</code>
+            <code>&lt;li&gt;<span>front-end</span>&lt;/li&gt;</code>
+          <code>&lt;/ol&gt;</code>
+        </pre>
+
+        <p>Caso você queira deixar em ordem alfabética é simples, coloque
+          o atributo type="a" dentro da tag  &lt;ol&gt;.</p>
+
+          <pre>
+            <code>&lt;ol type="a"&gt;</code>
+              <code>&lt;li&gt;<span>html</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>css</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>javascript</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>front-end</span>&lt;/li&gt;</code>
+            <code>&lt;/ol&gt;</code>
+          </pre>
+
+          <p>Você também pode deixar com algarismos romanos.</p>
+
+          <pre>
+            <code>&lt;ol type="I"&gt;</code>
+              <code>&lt;li&gt;<span>html</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>css</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>javascript</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>front-end</span>&lt;/li&gt;</code>
+            <code>&lt;/ol&gt;</code>
+          </pre>
+      </div>
+
+      <div>
+        <h3>Listas desordenadas</h3>
+        <p>As listas não numeradas são usadas para listar itens, sem se
+          preocupar com sua sequência. Chamamos de lista de
+          marcadores apenas. Ela segue o mesmo padrão da ordenada
+          apenas mudando de &lt;ol&gt; para &lt;ul&gt;. Em seu visual ele mudará
+          de números para pontos.
+          </p>
+
+          <pre>
+            <code>&lt;ul&gt;</code>
+              <code>&lt;li&gt;<span>html</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>css</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>javascript</span>&lt;/li&gt;</code>
+              <code>&lt;li&gt;<span>front-end</span>&lt;/li&gt;</code>
+            <code>&lt;/ul&gt;</code>
+          </pre>
+      </div>
+
+      <div>
+        <h3>Formulário</h3>
+        <p>Nesta seção vamos mostrar como montar seu formulário.
+          Formulários HTML são um dos principais pontos de interação
+          entre o usuário e sua página. Um formulário HTML é feito de
+          um ou mais widgets. Esses widgets podem ser campos de texto,
+          caixas de seleção, botões, checkboxes e radio buttons.
+          </p>
+
+        <p>Para construir o nosso formulário de contato, vamos utilizar os
+          seguintes elementos &lt;form&gt;, &lt;label&gt;, &lt;input&gt;, &lt;textarea&gt; e
+            &lt;button&gt;</p>
+      </div>
+
+      <div>
+        <h3>Form</h3>
+        <p>Todos formulários HTML começam com um elemento &lt;form&gt; como este:</p>
+
+        <pre>
+          <code>&lt;form action="/pagina-processa-dados-do-form" method="post"&gt;&lt;/form&gt;</code>
+        </pre>
+        
+        <p>
+          O action especifica para onde enviar os dados do formulário quando um formulário é enviado.
+        </p>
+
+        <p>O method especifica o método HTTP a ser usado ao enviar
+          dados do formulário (ele pode ser get ou post).</p>
+      </div>
+
+      <div>
+        <h3>Label, Input e Textarea</h3>
+        <p>O nosso exemplo de formulário é muito simples e contém três
+          campos de texto, cada um com uma etiqueta (label). O campo
+          de entrada para o nome será um campo básico texto de linha
+          única (input); o campo de entrada do e-mail será um campo de
+          texto com uma única linha (input) que vai aceitar apenas um
+          endereço de e-mail; o campo de entrada para a mensagem será
+          um campo de texto de várias linhas (textarea).
+          </p>
+
+          <p>Em termos de código HTML, teremos algo assim:
+          </p>
+
+          <pre>
+          <code>&lt;form action="/pagina-processa-dados-do-form" method="post"&gt;</code>
+            <code>&lt;label&gt;<span>Nome:</span>&lt;/label&gt;</code>
+            <code>&lt;input type="text"/&gt;</code>
+            
+            <code>&lt;label&gt;<span>E-mail:</span>&lt;/label&gt;</code>
+            <code>&lt;input type="email&gt;</code>
+          
+            <code>&lt;label&gt;<span>Mensagem:</span>&lt;/label&gt;</code>
+            <code>&lt;textarea>&lt;/textarea&gt;</code>
+          <code>&lt;/form&gt;</code>
+          </pre>
+
+          <p>Algumas observações:</p>
+            
+        <ul>
+          <li>
+            <p>No input temos o atributo type. Esse atributo define a forma
+              que nosso input se comporta. Exemplo: o type="email" ele
+              define que o campo aceita só endereço de e-mail.</p>
+          </li>
+          <li>
+            <p>A tag &lt;textarea&gt; efine um controle de entrada de texto de várias linhas
+              geralmente usado para coletar entradas do usuário, como
+              comentários ou revisões.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Elemento Button</h3>
+        <p>O nosso formulário está quase pronto, nós temos apenas que
+          adicionar um botão para permitir que o usuário envie os dados
+          preenchidos no formulário. Isto é simplesmente feito usando a
+          tag &lt;button&gt;.
+          </p>
+
+        <pre>
+          <code>&lt;button type="submit"&gt;<span>Enviar</span>&lt;/button&gt;</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>Semânticas</h3>
+        <p>Na vida sempre temos uma forma correta de fazer as coisas, no
+          HTML não é diferente! As tags semânticas além de deixar o
+          código melhor para o SEO dos navegadores, ela ajuda outros
+          desenvolvedores a entender seu código só batendo o olho, isso
+          é ótimo para que outros desenvolvedores contribuem em seus
+          projetos.</p>
+
+          <p>Uma observação:</p>
+
+          <ul>
+            <li>
+              <p>As tags semânticas não têm nenhum efeito na apresentação na página.</p>
+            </li>
+            <li>
+              <p>Elementos semânticos: tem significado e deixam seu conteúdo claro.</p>
+            </li>
+            <li>
+              <p>Elementos não semânticos: não deixam seu conteúdo claro.</p>
+            </li>
+          </ul>
+
+          <p>Exemplo de elementos não semânticos: &lt;div> e &lt;span> e de
+            elementos semânticos: &lt;form&gt;, &lt;table&gt;, &lt;article&gt;, &lt;footer&gt; e
+            &lt;section&gt;.</p>
+
+          <p>Veja que div é amplo, mas a tag &lt;footer&gt; dá significado (que é o
+              rodapé).
+              </p>
+
+        <p>Portanto ao invés de:</p>
+        <pre>
+          <code>&lt;div&gt;<span>Sou o rodapé</span>&lt;/div&gt;</code>
+        </pre>
+
+        <p>Não seria melhor:</p>
+        <pre>
+          <code>&lt;footer&gt;<span>Sou o rodapé</span>&lt;/footer&gt;</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>As principais tags semânticas</h3>
+        <ul>
+          <li>
+            <h4>&lt;aside&gt;</h4>
+            <p>
+              - Por conceito, expressa um conteúdo a parte do
+              conteúdo da página.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;details&gt;</h4>
+            <p>- Apresenta detalhes adicionais que o usuário pode
+              mostrar ou esconder.</p>
+          </li>
+
+          <li>
+            <h4>&lt;article&gt;</h4>
+            <p>
+              - Expressa um elemento independente, ou seja, que
+              possa ser lido e interpretado sem depender do resto da página.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;figcaption&gt;</h4>
+            <p>
+              - Representa uma legenda para um elemento
+              &lt;figure&gt;.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;figure&gt;</h4>
+            <p>
+              - Representa um conteúdo independente, como ilustrações, diagramas, etc...
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;footer&gt;</h4>
+            <p>
+              - Representa o rodapé.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;header&gt;</h4>
+            <p>
+              - representa o cabeçalho.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;main&gt;</h4>
+            <p>
+              - Representa o conteúdo principal de um documento.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;mark&gt;</h4>
+            <p>
+              - Representa um texto destacado.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;nav&gt;</h4>
+            <p>
+              - Representa links de navegação.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;section&gt;</h4>
+            <p>
+              - Representa uma seção dentro de um documento.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;time&gt;</h4>
+            <p>
+              - Representa uma data/hora.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;summary&gt;</h4>
+            <p>
+              - Representa um cabeçalho para um elemento
+              details.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Outras tags</h3>
+        <ul>
+          <li>
+            <h4>&lt;audio&gt;</h4>
+            <p>
+              - Inserir arquivo de áudio.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;canvas&gt;</h4>
+            <p>- Área utilizada para desenhar gráficos em javascript</p>
+          </li>
+
+          <li>
+            <h4>&lt;command&gt;</h4>
+            <p>
+              - Comando personalizado, pode ser chamado pelo
+              usuário
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;datatemplate&gt;</h4>
+            <p>
+              - Bloco para templates de dados.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;embed&gt;</h4>
+            <p>
+              - Inserir conteúdo externo como SWF, vídeos, áudios.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;keygen&gt;</h4>
+            <p>
+              - Gerar pares de chaves em um formulário.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;progress&gt;</h4>
+            <p>
+              - Barra de progresso, tipo loading para mostrar o
+              progresso de uma determinada tarefa.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;meter&gt;</h4>
+            <p>
+              - Controle gráfico que mostra uma barra métrica que
+              indica graficamente um valor.              
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;source&gt;</h4>
+            <p>
+              -Apontador para os arquivos de mídia das tags
+              &lt;audio&gt; e &lt;video&gt;.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;wbr&gt;</h4>
+            <p>
+              - Especifica uma quebra de linha para textos longos,
+              especificamos onde o texto será quebrado.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;video&gt;</h4>
+            <p>
+              - Tag para inserir vídeos na página.
+            </p>
+          </li>
+
+        </ul>
       </div>
     </main>
   </body>
