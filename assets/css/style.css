@@ -1,0 +1,171 @@
+/*Variáveis*/
+:root {
+  --color-primary: #6610f2;
+
+  --bg-color: #131219;
+  --bg-color2: #17161d;
+
+  --color-white: #fefbfb;
+  --color-grey: #b6b6b6;
+}
+/*Reset*/
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+::marker {
+  color: var(--color-primary);
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+  color: var(--color-white);
+  font-family: "Lora", serif;
+}
+button,
+input {
+  border: 0;
+}
+body {
+  color: var(--font-color-1);
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  color: var(--color-white);
+  width: 100%;
+}
+@media screen and (max-width: 1000px){
+  html {
+    font-size: 52.5%;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2c2c2c;
+  border-radius: 4px;
+}
+pre {
+  background-color: #1A191E;
+  border-radius: 4px;
+  margin: 50px 0;
+  padding: 20px 50px 10px 0px;
+  white-space: pre-wrap;
+  
+}
+pre code {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #FF79A6;
+  padding-top: 50px;
+}
+
+pre code span {
+  color: var(--color-white);
+}
+
+header {
+  width: 100%;
+  background-color: var(--bg-color2);
+  text-align: center;
+  height: auto;
+  padding: 50px 25px;
+  margin-bottom: 100px;
+}
+header h1 {
+  color: var(--color-white);
+  font-size: 4rem;
+}
+header p {
+  color: var(--color-grey);
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.content {
+  max-width: 900px;
+  margin: 20px auto 200px auto;
+  color: var(--color-grey);
+  width: 100%;
+  height: auto;
+  padding: 0px 25px;
+}
+.content div {
+  margin-bottom: 50px;
+}
+.content h2 {
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+}
+.content h3 {
+  font-size: 2.4rem;
+  margin: 20px 0px;
+}
+.content h4 {
+  font-size: 2rem;
+  margin: 20px 0px;
+}
+.content h3::before {
+  content: "|";
+  background-color: var(--color-primary);
+  margin-right: 10px;
+  color: var(--color-primary);
+}
+.content p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.content div li {
+  list-style: inside;
+  font-size: 2.4rem;
+  margin: 20px 0px;
+}
+.content div li h4 {
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.content div li p {
+  display: inline;
+}
+.content div p span {
+  font-style: italic;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Iuri Silva" />
+    <meta name="description" content="Front-end do Zero" />
+    <meta
+      name="keywords"
+      content="sites, web, desenvolvimento, programador, iuricode, front-end, designer, ui, iuri"
+    />
+    <meta name="theme-color" content="#6610F2" />
+    <meta name="copyright" content="iuricode 2021" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta
+      property="og:image"
+      content="https://iuricode.vercel.app/assets/image/preview.png"
+    />
+    <meta property="og:title" content="Front-end do Zero" />
+    <meta property="og:description" content="Front-end do Zero" />
+    <link
+      rel="shortcut icon"
+      href="assets/image/iuricode.svg"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="assets/image/iuricode.svg" />
+    <link rel="canonical" href="https://iuricode.vercel.app/" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Front-end do Zero - Iuri Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Lora:ital,wght@0,400;0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Front-end do zero</h1>
+      <p>Ajudando você a criar um castelo de código</p>
+    </header>
+
+    <main class="content">
+      <div>
+        <h2>Fundamentos HTML</h2>
+        <h3>O que é HTML</h3>
+        <p>
+          HTML, ou Hypertext Markup Language é uma linguagem de marcação
+          <span>(não de programação)</span> da web - cada vez que você carrega
+          uma página da web, você está carregando um código HTML. Pense em HTML
+          como o esqueleto de uma página da web, ele é responsável pelos textos,
+          links, listas e imagens - ele oferece conteúdos.
+        </p>
+      </div>
+
+      <div>
+        <h3>Iniciando</h3>
+        <p>
+          HTML é escrito em arquivos .html. Para criar uma página HTML é fácil,
+          entre em seu editor de código
+          <span>(se não tiver recomendo o visual studio code)</span> e salve o
+          arquivo em branco como pagina.html
+          <span>(você pode nomeá-lo como quiser, mas não esqueça do .html)</span
+          >.
+        </p>
+      </div>
+
+      <div>
+        <h3>Estrutura de uma página HTML</h3>
+        <p>A estrutura inicial do seu html será essa:</p>
+
+        <pre>
+          <code>&lt;!DOCTYPE html&gt;</code>
+          <code>&lt;html&gt;</code>
+          <code>&lt;head&gt;</code>
+          <code>&lt;/head&gt;</code>
+          <code>&lt;body&gt;</code>
+          <code>&lt;/body&gt;</code>
+          <code>&lt;/html&gt;</code>
+        </pre>
+
+        <p>Vou explicar sobre elas!</p>
+
+        <ul>
+          <li>
+            <h4>&lt;!DOCTYPE html&gt;</h4>
+            <p>
+              - Essa tag <span>(não tem fechamento)</span> informa ao seu
+              navegador que o arquivo faz parte de um documento HTML5.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;html&gt;</h4>
+            <p>- Representa a raiz de um documento HTML.</p>
+          </li>
+
+          <li>
+            <h4>&lt;head&gt;</h4>
+            <p>
+              - O head contém informações sobre sua página, mas não é o conteúdo
+              que vai aparecer na sua página. Ela conterá coisas como: links
+              para folhas de estilo (CSS), título da página, links de fontes e
+              tudo aquilo que você quiser linkar.
+            </p>
+          </li>
+
+          <li>
+            <h4>&lt;body&gt;</h4>
+            <p>
+              - O body contém todo o conteúdo que vai aparecer na sua página.
+              Todo o código que você escrever estará dentro dele.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Sintaxe</h3>
+        <p>
+          Os elementos HTML são escritos usando tags. Todas as tags tem uma
+          chave de abertura e fechamento &lt;tag&gt;. A tag de fechamento que
+          tem uma barra após o primeiro colchete &lt;/tag&gt;.
+        </p>
+
+        <pre>
+          <code>&lt;tag&gt;<span>iuricode</span>&lt;/tag&gt;</code>
+        </pre>
+
+        <p>
+          Por exemplo, se você deseja criar um parágrafo, usaremos as chaves de
+          abertura &lt;p&gt; e fechamento &lt;/p&gt;:
+        </p>
+
+        <pre>
+          <code>&lt;p&gt;Programador sem café é um poeta sem poesia.&lt;/p&gt;</code>
+        </pre>
+
+        <p>Os elementos podem entrar dentro de outros elementos:</p>
+
+        <pre>
+          <code>&lt;pai&gt;</code>
+            <code>&lt;filho&gt;</code>
+              <code><span>Esta tag está dentro de outra tag</span></code>
+            <code>&lt;/filho&gt;</code>
+          <code>&lt;/pai&gt;</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>Indentação adequada</h3>
+        <p>
+          As quebras de linha entre suas tags são super importantes para
+          escrever um bom código HTML.
+        </p>
+
+        <pre>
+          <code>&lt;!DOCTYPE html&gt;</code>
+          <code>&lt;html&gt;</code>
+            <code>&lt;head&gt;</code>
+            <code>&lt;/head&gt;</code>
+            <code>&lt;body&gt;</code>
+              <code>&lt;h1&gt;<span>Aqui tem título</span>&lt;/h1&gt;</code>
+              <code>&lt;p&gt;<span>E aqui um parágrafo</span>&lt;/p&gt;</code>
+            <code>&lt;/body&gt;</code>
+          <code>&lt;/html&gt;</code>
+        </pre>
+
+        <p>Abaixo temos um indentação não recomendada:</p>
+
+        <pre>
+          <code>&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;<span>Não faça isso!</span>&lt;/h1&gt; &lt;/body&gt; &lt;/html&gt;&lt;/code&gt;
+        </pre>
+      </div>
+
+      <div>
+        <h3>Tags</h3>
+        <p>
+          Agora vamos apresentar as principais tags do HTML.
+        </p>
+
+        <h4>Título</h4>
+        <p>As tags de títulos são representadas em até seis níveis. &lt;h1&gt; é o
+          nível mais alto e &lt;h6&gt; é o mais baixo. Quanto maior for o nível
+          da tag, maior vai ser o tamanho da fonte e a importância.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
