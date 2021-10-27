@@ -7,7 +7,7 @@
     <meta name="description" content="Front-end do Zero" />
     <meta
       name="keywords"
-      content="sites, web, desenvolvimento, programador, iuricode, front-end, designer, ui, iuri"
+      content="sites, web, desenvolvimento, programador, iuricode, front-end, designer, ui, iuri, ebook, livro"
     />
     <meta name="theme-color" content="#6610F2" />
     <meta name="copyright" content="iuricode 2021" />
@@ -36,46 +36,22 @@
     />
   </head>
   <body>
+    <nav>
+      <a
+        href="https://github.com/iuricode/ebook"
+        rel="noopener"
+        target="_blank"
+      >
+        <img src="assets/image/github-icon.svg" alt="Foto iuricode" />
+      </a>
+    </nav>
+
     <header>
       <h1>Front-end do zero</h1>
       <p>Ajudando você a criar um castelo de código</p>
     </header>
 
     <main class="content">
-      <div class="introducao">
-        <h2>Sobre o ebook</h2>
-        <p>
-          Esse é um pequeno guia de passos para iniciante começar no
-          desenvolvimento front-end. Espero que você possa aprender muitas
-          coisas ao ler cada página deste ebook.
-        </p>
-
-        <p>
-          Faça todos os testes você mesmo, faça exercícios, busque informações e
-          se aprofunde.
-        </p>
-
-        <p>
-          Observação importante: O desenvolvimento do ebook não foi concluído
-          ainda, falta o fundamentos de CSS e JavaScript.
-        </p>
-
-        <p>
-          Sinta-se à vontade em ajudar a comprar meu café, assim continuo
-          criando conteúdos de forma gratuita :)
-        </p>
-
-        <h6>Chave do pix: iuricold99@gmail.com</h6>
-
-        <p>
-          Grande abraço!<br />
-          by
-          <a href="https://www.instagram.com/iuricode/" target="_blank"
-            >iuricode</a
-          >
-        </p>
-      </div>
-
       <div>
         <h2>Fundamentos HTML</h2>
         <h3>O que é HTML</h3>
@@ -1235,6 +1211,178 @@
           </li>
         </ul>
       </div>
+
+      <!--<div>
+        <h2>Fundamentos JavaScript</h2>
+        <h3>O que é JavaScript</h3>
+        <p>
+          JavaScript (ou JS) é uma linguagem de programação que permite a você
+          implementar coisas dinâmicas em páginas web. Toda vez que uma página
+          da web faz mais do que simplesmente mostrar a você informações
+          estáticas, mostrando conteúdo que se atualiza em um intervalo de
+          tempo, mapas interativos ou gráficos 2D/3D animados, etc. Você pode
+          apostar que o JavaScript provavelmente está envolvido.
+        </p>
+      </div>
+
+      <div>
+        <h3>Iniciando</h3>
+        <h4>Vamos por etapas.</h4>
+
+        <h4>Etapa 1: Criar um arquivo JavaScript</h4>
+        <p>
+          O primeiro passo é criar um arquivo .js. Então abrindo seu editor de
+          códigos, crie um novo arquivo chamado de script.js (você pode nomeá-lo
+          como quiser, porém não pode faltar o .js no final).
+        </p>
+
+        <h4>Etapa 2: Linkar seu JavaScript no HTML</h4>
+        <p>
+          Precisamos conectar nossa página script.js à página HTML. Dentro da
+          tag &lt;body&gt; de sua página HTML, vamos adicionar uma tag
+          &lt;script&gt; para conectar nosso código JavaScript. É recomendado
+          salvar no final do seu código, acima das tags &lt;body&gt; e
+          &lt;html&gt;.
+        </p>
+
+        <pre>
+          <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>Comentários</h3>
+        <p>
+          Comentários são linhas de códigos não executáveis. No exemplo vamos
+          usar barra dupla, isso deixa apenas uma linha comentada.
+        </p>
+        <pre>
+          <code>//Serve para comentar uma linha de código</code>
+          <code>//var texto = ‘esse código não será executado’</code>
+        </pre>
+
+        <p>
+          Para deixar comentada várias linhas de código comece com /* e termine
+          com */.
+        </p>
+
+        <pre>
+          <code>/*</code>
+          <code>var idade = 15</code>
+          <code>var conseguir = ‘você vai conseguir’</code>
+          <code>*/</code>
+        </pre>
+
+      </div>
+
+      <div>
+        <h3>Variáveis</h3>
+        <p>
+          Uma variável é um espaço na memória do computador destinado a um dado.
+          Pode iniciar com as palavras var, let e const.
+        </p>
+
+        <pre>
+          <code>var nome = iuri';</code>
+          <code>let idade = 21;</code>
+          <code>const estudante = true;</code>
+        </pre>
+
+        <p>Nesse caso se você colocar:</p>
+
+        <pre>
+          <code>console.log(nome);</code>
+        </pre>
+
+        <p>Em seu console do browser vai aparecer “iuri”.</p>
+
+        <p>
+          É recomendado utilizar const ou let na declaração de variáveis. Pois
+          elas não vazam o bloco.
+        </p>
+      </div>
+
+      <div>
+        <h3>Condicionais if e else</h3>
+        <p>
+          Estruturas condicionais Javascript são como estruturas condicionais
+          onde na maioria das linguagens de programação existentes, as
+          utilizamos para verificar uma condição e definir se algo deve ou não
+          acontecer.
+        </p>
+
+        <pre>
+          <code> var naoChoveu = true;</code>
+          <code>if(naoChoveu == true){ //essa linha de código, verifica se a condição passada entre os parênteses é verdadeira.</code>
+          <code>console.log('vou jogar bola'); //se for condição for verdadeira irá executar esse comando e pular o else</code>
+          <code>} else{</code>
+          <code>console.log('ficarei em casa'); //se for condição for falsa irá executar esse comando</code>
+          <code>}</code>
+        </pre>
+
+        <p>
+          Coloque esse código em seu editor de códigos e veja o resultado no
+          console do navegador.
+        </p>
+
+        <p>
+          Para ver o resultado do console. Abra seu arquivo HTML (que está com o
+          JavaScript) no navegador, clique com o botão direito do mouse
+          "inspecionar" e procure por console. Lá irá aparecer o resultado dele.
+        </p>
+      </div>
+
+      <div>
+        <h3>Funções</h3>
+        <p>
+          Funções são blocos de códigos fundamentais em JavaScript. Uma função é
+          um procedimento de JavaScript, um conjunto de instruções que executa
+          uma tarefa ou calcula um valor.
+        </p>
+        <h4>Declarar uma função</h4>
+        <p>A declaração de função consiste no uso da palavra chave Function.</p>
+
+        <pre>
+          <code>function multiplicacao(num) {</code>
+          <code>return num * num</code>
+          <code>}</code>
+          <code>//chamando a função e demonstrando ela no console.</code>
+          <code>console.log(multiplicacao(15)); // 225</code>
+          <code>console.log(multiplicacao(2)); // 4</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>Parâmetros e Argumentos</h3>
+        <p>Ao criar uma função, você pode definir os parâmetros.</p>
+        <pre>
+          <code>function imc(peso, altura){ // Peso e Altura são parâmetros</code>
+          <code>const imc = peso / altura * 2</code>
+          <code>return imc</code>
+          <code>}</code>
+          <code>console.log(imc(70, 1.90)) // 70, 1.80 são argumentos</code>
+        </pre>
+      </div>
+
+      <div>
+        <h3>Objetos</h3>
+        <p>
+          Um objeto é uma coleção de dados e/ou funcionalidades relacionadas
+          (que geralmente consistem em diversas variáveis e funções, que são
+          chamadas de propriedades e métodos quando estão dentro de objetos).
+        </p>
+
+        <pre>
+          <code>var eu = {</code>
+          <code>nome: 'andrew',</code>
+          <code>idade: 18,</code>
+          <code>time:'vasco',</code>
+          <code>}</code>
+
+          <code>console.log(eu) // { nome: "andrew", idade: 18, time = "vasco"}</code>
+          <code>console.log(eu.nome) // andrew</code>
+        </pre>
+      </div>-->
     </main>
   </body>
 </html>
