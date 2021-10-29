@@ -89,7 +89,7 @@ pre code {
 pre code span {
   color: var(--color-white);
 }
-header {
+#sub-header {
   width: 100%;
   background-color: var(--color-text);
   text-align: center;
@@ -98,11 +98,11 @@ header {
   margin-bottom: 100px;
   margin-top: 65px;
 }
-header h1 {
+#sub-header h1 {
   color: var(--color-white);
   font-size: 4rem;
 }
-header p {
+#sub-header p {
   color: var(--color-white);
   font-size: 2rem;
   margin-top: 10px;
@@ -119,8 +119,7 @@ nav {
   left: 0;
 }
 nav img {
-  border-radius: 50%;
-  width: 32px;
+  width: 126px;
 }
 .content {
   max-width: 900px;
